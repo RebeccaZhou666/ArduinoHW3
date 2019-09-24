@@ -1,0 +1,724 @@
+void setup() {
+  // put your setup code here, to run once:
+    pinMode(2,OUTPUT);
+    pinMode(3,OUTPUT);
+    pinMode(4,OUTPUT);
+    pinMode(5,OUTPUT);
+    pinMode(16,OUTPUT);
+
+    pinMode(6,OUTPUT);
+    pinMode(7,OUTPUT);
+    pinMode(8,OUTPUT);
+    pinMode(9,OUTPUT);
+    pinMode(10,OUTPUT);
+    pinMode(11,OUTPUT);
+    pinMode(12,OUTPUT);
+    pinMode(13,OUTPUT);
+    pinMode(14,OUTPUT);
+    pinMode(15,OUTPUT);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  String str1 = Serial.readString();
+  int len = str1.length();
+  if (len > 0){
+  // start screen
+    digitalWrite(16,HIGH); 
+    digitalWrite(2,HIGH); 
+    digitalWrite(3,HIGH);
+    digitalWrite(4,HIGH);
+    digitalWrite(5,HIGH); 
+    digitalWrite(6,HIGH);
+    digitalWrite(7,HIGH);
+    digitalWrite(8,HIGH); 
+    digitalWrite(9,HIGH);
+    digitalWrite(10,HIGH);
+    digitalWrite(11,HIGH); 
+    digitalWrite(12,HIGH);
+    digitalWrite(13,HIGH);
+    digitalWrite(14,HIGH);
+    digitalWrite(15,HIGH);
+    delay(500);
+    digitalWrite(16,LOW);
+    digitalWrite(2,LOW); 
+    digitalWrite(3,LOW);
+    digitalWrite(4,LOW);
+    digitalWrite(5,LOW); 
+    digitalWrite(6,LOW);
+    digitalWrite(7,LOW);
+    digitalWrite(8,LOW); 
+    digitalWrite(9,LOW);
+    digitalWrite(10,LOW);
+    digitalWrite(11,LOW);
+    digitalWrite(12,LOW);
+    digitalWrite(13,LOW);
+    digitalWrite(14,LOW);
+    digitalWrite(15,LOW);
+    delay(500);
+    
+    // show alphabets one by one
+    for (int num=0; num<len; num++){
+       char alphabet = str1[num];
+    
+    //char i; 
+   // char a;
+    switch (alphabet) {
+      case 'a': case 'A':
+        digitalWrite(2,HIGH); 
+        digitalWrite(4,HIGH);
+        digitalWrite(6,HIGH);
+        digitalWrite(7,HIGH); 
+        digitalWrite(8,HIGH);
+        digitalWrite(9,HIGH);
+        digitalWrite(10,HIGH); 
+        digitalWrite(12,HIGH);
+        digitalWrite(13,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(2,LOW); 
+        digitalWrite(4,LOW);
+        digitalWrite(6,LOW);
+        digitalWrite(7,LOW); 
+        digitalWrite(8,LOW);
+        digitalWrite(9,LOW);
+        digitalWrite(10,LOW); 
+        digitalWrite(12,LOW);
+        digitalWrite(13,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+      case 'b': case 'B':
+        digitalWrite(16,HIGH);
+        digitalWrite(2,HIGH); 
+        digitalWrite(4,HIGH);
+        digitalWrite(6,HIGH);
+        digitalWrite(7,HIGH); 
+        digitalWrite(8,HIGH);
+        digitalWrite(10,HIGH); 
+        digitalWrite(12,HIGH);
+        digitalWrite(13,HIGH);
+        digitalWrite(14,HIGH);
+        delay(800);
+        digitalWrite(16,LOW); 
+        digitalWrite(2,LOW); 
+        digitalWrite(4,LOW);
+        digitalWrite(6,LOW);
+        digitalWrite(7,LOW); 
+        digitalWrite(8,LOW);
+        digitalWrite(10,LOW);
+        digitalWrite(12,LOW);
+        digitalWrite(13,LOW);
+        digitalWrite(14,LOW);
+        delay(600);
+        break;
+      case 'c': case 'C':
+        digitalWrite(2,HIGH); 
+        digitalWrite(3,HIGH);
+        digitalWrite(4,HIGH);
+        digitalWrite(7,HIGH); 
+        digitalWrite(10,HIGH); 
+        digitalWrite(14,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(2,LOW); 
+        digitalWrite(3,LOW);
+        digitalWrite(4,LOW);
+        digitalWrite(7,LOW); 
+        digitalWrite(10,LOW);
+        digitalWrite(14,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+      case 'd': case 'D':
+        digitalWrite(16,HIGH); 
+        digitalWrite(2,HIGH); 
+        digitalWrite(4,HIGH);
+        digitalWrite(6,HIGH);
+        digitalWrite(7,HIGH); 
+        digitalWrite(9,HIGH); 
+        digitalWrite(10,HIGH);
+        digitalWrite(12,HIGH);
+        digitalWrite(13,HIGH);
+        digitalWrite(14,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(2,LOW); 
+        digitalWrite(4,LOW);
+        digitalWrite(6,LOW);
+        digitalWrite(7,LOW); 
+        digitalWrite(9,LOW);
+        digitalWrite(10,LOW);
+        digitalWrite(12,LOW);
+        digitalWrite(13,LOW);
+        digitalWrite(14,LOW);
+        delay(600);
+        break;
+
+      case 'e': case 'E':
+        digitalWrite(16,HIGH); 
+        digitalWrite(2,HIGH); 
+        digitalWrite(3,HIGH);
+        digitalWrite(4,HIGH);
+        digitalWrite(7,HIGH); 
+        digitalWrite(8,HIGH); 
+        digitalWrite(9,HIGH);
+        digitalWrite(10,HIGH);
+        digitalWrite(13,HIGH);
+        digitalWrite(14,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(2,LOW); 
+        digitalWrite(3,LOW);
+        digitalWrite(4,LOW);
+        digitalWrite(7,LOW); 
+        digitalWrite(8,LOW);
+        digitalWrite(9,LOW);
+        digitalWrite(10,LOW);
+        digitalWrite(13,LOW);
+        digitalWrite(14,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+
+      case 'f': case 'F':
+        digitalWrite(16,HIGH); 
+        digitalWrite(2,HIGH); 
+        digitalWrite(3,HIGH);
+        digitalWrite(4,HIGH);
+        digitalWrite(7,HIGH); 
+        digitalWrite(8,HIGH); 
+        digitalWrite(9,HIGH);
+        digitalWrite(10,HIGH);
+        digitalWrite(13,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(2,LOW); 
+        digitalWrite(3,LOW);
+        digitalWrite(4,LOW);
+        digitalWrite(7,LOW); 
+        digitalWrite(8,LOW);
+        digitalWrite(9,LOW);
+        digitalWrite(10,LOW);
+        digitalWrite(13,LOW);
+        delay(600);
+        break;
+
+      case 'g': case 'G':
+        digitalWrite(2,HIGH); 
+        digitalWrite(3,HIGH);
+        digitalWrite(4,HIGH);
+        digitalWrite(7,HIGH); 
+        digitalWrite(8,HIGH); 
+        digitalWrite(9,HIGH);
+        digitalWrite(10,HIGH);
+        digitalWrite(12,HIGH);
+        digitalWrite(14,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(2,LOW); 
+        digitalWrite(3,LOW);
+        digitalWrite(4,LOW);
+        digitalWrite(7,LOW); 
+        digitalWrite(8,LOW);
+        digitalWrite(9,LOW);
+        digitalWrite(10,LOW);
+        digitalWrite(12,LOW);
+        digitalWrite(14,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+
+      case 'h': case 'H':
+        digitalWrite(16,HIGH); 
+        digitalWrite(3,HIGH); 
+        digitalWrite(4,HIGH);
+        digitalWrite(6,HIGH);
+        digitalWrite(7,HIGH); 
+        digitalWrite(8,HIGH); 
+        digitalWrite(9,HIGH);
+        digitalWrite(10,HIGH);
+        digitalWrite(12,HIGH);
+        digitalWrite(13,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(3,LOW); 
+        digitalWrite(4,LOW);
+        digitalWrite(6,LOW);
+        digitalWrite(7,LOW); 
+        digitalWrite(8,LOW);
+        digitalWrite(9,LOW);
+        digitalWrite(10,LOW);
+        digitalWrite(12,LOW);
+        digitalWrite(13,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+        
+      case 'i': case 'I':
+        digitalWrite(16,HIGH);
+        digitalWrite(2,HIGH);
+        digitalWrite(3,HIGH);
+        digitalWrite(5,HIGH);
+        digitalWrite(8,HIGH); 
+        digitalWrite(11,HIGH);
+        digitalWrite(13,HIGH);
+        digitalWrite(14,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(2,LOW);
+        digitalWrite(3,LOW);
+        digitalWrite(5,LOW);
+        digitalWrite(8,LOW); 
+        digitalWrite(11,LOW);
+        digitalWrite(13,LOW);
+        digitalWrite(14,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+
+       case 'j': case 'J':
+        //digitalWrite(2,HIGH);
+        digitalWrite(3,HIGH);
+        digitalWrite(6,HIGH);
+        digitalWrite(9,HIGH); 
+        digitalWrite(12,HIGH);
+        digitalWrite(13,HIGH);
+        digitalWrite(14,HIGH);
+        delay(800);
+        //digitalWrite(2,LOW);
+        digitalWrite(3,LOW);
+        digitalWrite(6,LOW);
+        digitalWrite(9,LOW); 
+        digitalWrite(12,LOW);
+        digitalWrite(13,LOW);
+        digitalWrite(14,LOW);
+        delay(600);
+        break;
+
+        case 'k': case 'K':
+        digitalWrite(16,HIGH);
+        digitalWrite(3,HIGH);
+        digitalWrite(4,HIGH);
+        digitalWrite(5,HIGH);
+        digitalWrite(7,HIGH); 
+        digitalWrite(10,HIGH);
+        digitalWrite(11,HIGH);
+        digitalWrite(13,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(3,LOW);
+        digitalWrite(4,LOW);
+        digitalWrite(5,LOW); 
+        digitalWrite(7,LOW);
+        digitalWrite(10,LOW);
+        digitalWrite(11,LOW);
+        digitalWrite(13,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+
+        case 'l': case 'L':
+        digitalWrite(16,HIGH);
+        digitalWrite(4,HIGH);
+        digitalWrite(7,HIGH);
+        digitalWrite(10,HIGH);
+        digitalWrite(13,HIGH); 
+        digitalWrite(14,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(4,LOW);
+        digitalWrite(7,LOW);
+        digitalWrite(10,LOW); 
+        digitalWrite(13,LOW);
+        digitalWrite(14,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+
+        case 'm': case 'M':
+        digitalWrite(16,HIGH);
+        digitalWrite(3,HIGH);
+        digitalWrite(4,HIGH);
+        digitalWrite(5,HIGH);
+        digitalWrite(6,HIGH);
+        digitalWrite(7,HIGH);
+        digitalWrite(8,HIGH);
+        digitalWrite(9,HIGH);
+        digitalWrite(10,HIGH); 
+        digitalWrite(12,HIGH);
+        digitalWrite(13,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(3,LOW);
+        digitalWrite(4,LOW);
+        digitalWrite(5,LOW); 
+        digitalWrite(6,LOW);
+        digitalWrite(7,LOW);
+        digitalWrite(8,LOW);
+        digitalWrite(9,LOW); 
+        digitalWrite(10,LOW);
+        digitalWrite(12,LOW);
+        digitalWrite(13,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+
+        case 'n': case 'N':
+        digitalWrite(16,HIGH); 
+        digitalWrite(3,HIGH); 
+        digitalWrite(4,HIGH);
+        digitalWrite(6,HIGH);
+        digitalWrite(7,HIGH); 
+        digitalWrite(8,HIGH); 
+        digitalWrite(9,HIGH);
+        digitalWrite(10,HIGH);
+        digitalWrite(12,HIGH);
+        digitalWrite(13,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(3,LOW); 
+        digitalWrite(4,LOW);
+        digitalWrite(6,LOW);
+        digitalWrite(7,LOW); 
+        digitalWrite(8,LOW);
+        digitalWrite(9,LOW);
+        digitalWrite(10,LOW);
+        digitalWrite(12,LOW);
+        digitalWrite(13,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+
+      case 'o': case 'O':
+        digitalWrite(16,HIGH);
+        digitalWrite(2,HIGH);
+        digitalWrite(3,HIGH);  
+        digitalWrite(4,HIGH); 
+        digitalWrite(6,HIGH);
+        digitalWrite(7,HIGH);
+        digitalWrite(9,HIGH); 
+        digitalWrite(10,HIGH); 
+        digitalWrite(12,HIGH);
+        digitalWrite(13,HIGH);
+        digitalWrite(14,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(2,LOW);
+        digitalWrite(3,LOW);
+        digitalWrite(4,LOW); 
+        digitalWrite(6,LOW);
+        digitalWrite(7,LOW);
+        digitalWrite(9,LOW); 
+        digitalWrite(10,LOW);
+        digitalWrite(12,LOW);
+        digitalWrite(13,LOW);
+        digitalWrite(14,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+
+      case 'p': case 'P':
+        digitalWrite(16,HIGH); 
+        digitalWrite(2,HIGH); 
+        digitalWrite(4,HIGH); 
+        digitalWrite(6,HIGH);
+        digitalWrite(7,HIGH);
+        digitalWrite(8,HIGH); 
+        digitalWrite(10,HIGH); 
+        digitalWrite(13,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(2,LOW);
+        digitalWrite(4,LOW); 
+        digitalWrite(6,LOW);
+        digitalWrite(7,LOW);
+        digitalWrite(8,LOW); 
+        digitalWrite(10,LOW);
+        digitalWrite(13,LOW);
+        delay(600);
+        break;
+        
+      case 'q': case 'Q':
+        digitalWrite(2,HIGH); 
+        digitalWrite(4,HIGH); 
+        digitalWrite(6,HIGH);
+        digitalWrite(7,HIGH);
+        digitalWrite(9,HIGH); 
+        digitalWrite(10,HIGH); 
+        digitalWrite(12,HIGH);
+        digitalWrite(14,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(2,LOW);
+        digitalWrite(4,LOW); 
+        digitalWrite(6,LOW);
+        digitalWrite(7,LOW);
+        digitalWrite(9,LOW); 
+        digitalWrite(10,LOW);
+        digitalWrite(12,LOW);
+        digitalWrite(14,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+
+      case 'r': case 'R':
+        digitalWrite(16,HIGH); 
+        digitalWrite(2,HIGH); 
+        digitalWrite(4,HIGH); 
+        digitalWrite(6,HIGH);
+        digitalWrite(7,HIGH);
+        digitalWrite(8,HIGH); 
+        digitalWrite(10,HIGH); 
+        digitalWrite(11,HIGH);
+        digitalWrite(13,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(2,LOW);
+        digitalWrite(4,LOW); 
+        digitalWrite(6,LOW);
+        digitalWrite(7,LOW);
+        digitalWrite(8,LOW); 
+        digitalWrite(10,LOW);
+        digitalWrite(11,LOW);
+        digitalWrite(13,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+
+      case 's': case 'S':
+        digitalWrite(16,HIGH); 
+        digitalWrite(2,HIGH); 
+        digitalWrite(3,HIGH); 
+        digitalWrite(4,HIGH);
+        digitalWrite(7,HIGH);
+        digitalWrite(8,HIGH); 
+        digitalWrite(9,HIGH); 
+        digitalWrite(12,HIGH);
+        digitalWrite(13,HIGH);
+        digitalWrite(14,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(2,LOW);
+        digitalWrite(3,LOW); 
+        digitalWrite(4,LOW);
+        digitalWrite(7,LOW);
+        digitalWrite(8,LOW); 
+        digitalWrite(9,LOW);
+        digitalWrite(12,LOW);
+        digitalWrite(13,LOW);
+        digitalWrite(14,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+
+      case 't': case 'T':
+        digitalWrite(16,HIGH); 
+        digitalWrite(2,HIGH); 
+        digitalWrite(3,HIGH); 
+        digitalWrite(5,HIGH);
+        digitalWrite(8,HIGH);
+        digitalWrite(11,HIGH); 
+        digitalWrite(14,HIGH); 
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(2,LOW);
+        digitalWrite(3,LOW);
+        digitalWrite(5,LOW);
+        digitalWrite(8,LOW);
+        digitalWrite(11,LOW); 
+        digitalWrite(14,LOW);
+        delay(600);
+        break;
+
+      case 'u': case 'U':
+        digitalWrite(16,HIGH); 
+        digitalWrite(3,HIGH); 
+        digitalWrite(4,HIGH); 
+        digitalWrite(6,HIGH);
+        digitalWrite(7,HIGH);
+        digitalWrite(9,HIGH); 
+        digitalWrite(10,HIGH); 
+        digitalWrite(12,HIGH);
+        digitalWrite(13,HIGH);
+        digitalWrite(14,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(3,LOW);
+        digitalWrite(4,LOW);
+        digitalWrite(6,LOW);
+        digitalWrite(7,LOW);
+        digitalWrite(9,LOW); 
+        digitalWrite(10,LOW);
+        digitalWrite(12,LOW);
+        digitalWrite(13,LOW);
+        digitalWrite(14,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+
+       case 'v': case 'V':
+        digitalWrite(16,HIGH); 
+        digitalWrite(3,HIGH); 
+        digitalWrite(4,HIGH); 
+        digitalWrite(6,HIGH);
+        digitalWrite(7,HIGH);
+        digitalWrite(9,HIGH); 
+        digitalWrite(10,HIGH); 
+        digitalWrite(12,HIGH);
+        digitalWrite(14,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(3,LOW);
+        digitalWrite(4,LOW);
+        digitalWrite(6,LOW);
+        digitalWrite(7,LOW);
+        digitalWrite(9,LOW); 
+        digitalWrite(10,LOW);
+        digitalWrite(12,LOW);
+        digitalWrite(14,LOW);
+        delay(600);
+        break;
+
+       case 'w': case 'W':
+        digitalWrite(16,HIGH); 
+        digitalWrite(3,HIGH); 
+        digitalWrite(4,HIGH); 
+        digitalWrite(6,HIGH);
+        digitalWrite(7,HIGH);
+        digitalWrite(8,HIGH);
+        digitalWrite(9,HIGH); 
+        digitalWrite(10,HIGH); 
+        digitalWrite(11,HIGH);
+        digitalWrite(12,HIGH);
+        digitalWrite(13,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(3,LOW);
+        digitalWrite(4,LOW);
+        digitalWrite(6,LOW);
+        digitalWrite(7,LOW);
+        digitalWrite(8,LOW); 
+        digitalWrite(9,LOW); 
+        digitalWrite(10,LOW);
+        digitalWrite(11,LOW);
+        digitalWrite(12,LOW);
+        digitalWrite(13,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+
+      case 'x': case 'X':
+        digitalWrite(16,HIGH); 
+        digitalWrite(3,HIGH); 
+        digitalWrite(8,HIGH);
+        digitalWrite(13,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(3,LOW);
+        digitalWrite(8,LOW); 
+        digitalWrite(13,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+
+     case 'y': case 'Y':
+        digitalWrite(16,HIGH); 
+        digitalWrite(3,HIGH); 
+        digitalWrite(8,HIGH);
+        digitalWrite(11,HIGH);
+        digitalWrite(14,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(3,LOW);
+        digitalWrite(8,LOW); 
+        digitalWrite(11,LOW);
+        digitalWrite(14,LOW);
+        delay(600);
+        break;
+
+     case 'z': case 'Z':
+        digitalWrite(16,HIGH); 
+        digitalWrite(2,HIGH); 
+        digitalWrite(3,HIGH); 
+        digitalWrite(6,HIGH);
+        digitalWrite(8,HIGH);
+        digitalWrite(10,HIGH);
+        digitalWrite(13,HIGH);
+        digitalWrite(14,HIGH);
+        digitalWrite(15,HIGH);
+        delay(800);
+        digitalWrite(16,LOW);
+        digitalWrite(2,LOW);
+        digitalWrite(3,LOW);
+        digitalWrite(6,LOW);
+        digitalWrite(8,LOW);
+        digitalWrite(10,LOW);
+        digitalWrite(13,LOW);
+        digitalWrite(14,LOW);
+        digitalWrite(15,LOW);
+        delay(600);
+        break;
+
+    default:
+       digitalWrite(13,HIGH);
+       digitalWrite(14,HIGH);
+       digitalWrite(15,HIGH);
+       delay(800);
+       digitalWrite(13,LOW);
+       digitalWrite(14,LOW);
+       digitalWrite(15,LOW);
+       delay(600);
+      break;
+    }
+  }
+
+    digitalWrite(16,HIGH); 
+    digitalWrite(2,HIGH); 
+    digitalWrite(3,HIGH);
+    digitalWrite(4,HIGH);
+    digitalWrite(5,HIGH); 
+    digitalWrite(6,HIGH);
+    digitalWrite(7,HIGH);
+    digitalWrite(8,HIGH); 
+    digitalWrite(9,HIGH);
+    digitalWrite(10,HIGH);
+    digitalWrite(11,HIGH); 
+    digitalWrite(12,HIGH);
+    digitalWrite(13,HIGH);
+    digitalWrite(14,HIGH);
+    digitalWrite(15,HIGH);
+    delay(500);
+    digitalWrite(16,LOW);
+    digitalWrite(2,LOW); 
+    digitalWrite(3,LOW);
+    digitalWrite(4,LOW);
+    digitalWrite(5,LOW); 
+    digitalWrite(6,LOW);
+    digitalWrite(7,LOW);
+    digitalWrite(8,LOW); 
+    digitalWrite(9,LOW);
+    digitalWrite(10,LOW);
+    digitalWrite(11,LOW);
+    digitalWrite(12,LOW);
+    digitalWrite(13,LOW);
+    digitalWrite(14,LOW);
+    digitalWrite(15,LOW);
+    delay(500);
+  }
+}
